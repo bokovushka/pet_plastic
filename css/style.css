@@ -729,6 +729,10 @@ header {
   color: #001945;
 }
 
+.nav-menu__link:hover {
+  color: #009fff;
+}
+
 .number {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1079,6 +1083,10 @@ header {
   line-height: 230%;
 }
 
+.footer-nav li:hover {
+  color: #009fff;
+}
+
 .footer__title {
   font-weight: 800;
   font-size: 24px;
@@ -1252,6 +1260,10 @@ header {
 
 .tab-view ul li.active {
   font-weight: 800;
+  color: #009fff;
+}
+
+.tab-view ul li:hover {
   color: #009fff;
 }
 
@@ -1999,7 +2011,10 @@ input {
     padding-top: 29px;
   }
   header {
-    padding-top: 16px;
+    padding-top: 18px;
+  }
+  .m-wrap {
+    padding: 18px 12px;
   }
   .tab-view .btn {
     width: 350px;

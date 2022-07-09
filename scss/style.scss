@@ -101,6 +101,9 @@ header {
 	line-height: 14px;
 	font-weight: 600;
 	color: $color__navy-blue;
+	&:hover {
+		color: $color__blue;
+	}
 }
 .number {
 	display: flex;
@@ -389,6 +392,9 @@ header {
 	li {
 		font-size: 16px;
 		line-height: 230%;
+		&:hover {
+			color: $color__blue;
+		}
 	}
 }
 .footer__title {
@@ -526,6 +532,9 @@ header {
 			}
 			&.active {
 				font-weight: 800;
+				color: $color__blue;
+			}
+			&:hover {
 				color: $color__blue;
 			}
 		}
@@ -1160,7 +1169,10 @@ input {
 		padding-top: 29px;
 	}
 	header {
-		padding-top: 16px;
+		padding-top: 18px;
+	}
+	.m-wrap {
+		padding: 18px 12px;
 	}
 	.tab-view .btn {
 		width: 350px;

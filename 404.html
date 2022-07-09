@@ -20,19 +20,42 @@
 					<a href="/" class="logo">
 						<img src="img/logo-h.png">
 					</a>
-					<ul class="nav-menu">
-						<li><a href="##" class="nav-menu__link">Головна</a></li>
-						<li><a href="##" class="nav-menu__link">Про нас</a></li>
-						<li><a href="##" class="nav-menu__link">Каталог</a></li>
-						<li><a href="##" class="nav-menu__link">Доставка та Оплата</a></li>
-						<li><a href="##" class="nav-menu__link">Контакти</a></li>
-					</ul>
+					<div class="m-wrap">
+						<div class="header-m">
+							<div class="logo">
+								<img src="img/logo-h.png">
+							</div>
+							<a href="tel:067 777 88 99" class="number">
+								<span class="icon-phone"></span>
+							</a>
+							<a class="menu-btn-m">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<ul class="nav-menu">
+							<li><a href="##" class="nav-menu__link">Головна</a></li>
+							<li><a href="##" class="nav-menu__link">Про нас</a></li>
+							<li><a href="##" class="nav-menu__link">Каталог</a></li>
+							<li><a href="##" class="nav-menu__link">Доставка та Оплата</a></li>
+							<li><a href="##" class="nav-menu__link">Контакти</a></li>
+							<li>
+								<a href="tel:067 777 88 99" class="number">
+									<span class="icon-phone"></span>
+									<p>067 777 88 99</p>
+								</a>
+							</li>
+							<li><a href="#popup" class="popup-link"><span class="icon-phone-circle"></span></a></li>
+						</ul>
+						<div></div>
+					</div>
 					<a href="tel:067 777 88 99" class="number">
 						<span class="icon-phone"></span>
 						<p>067 777 88 99</p>
 					</a>
 					<a href="#popup" class="btn call-back popup-link">Замовити дзвінок</a>
-					<a href="#header" class="menu-btn">
+					<a class="menu-btn">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -99,7 +122,7 @@
 							<p><span class="icon-phone"></span>м.Тернопіль, вул.Кравчука 34а</p>
 							<p><span class="icon-location"></span><a href="tel:+38 098 564 23 51">+38 098 564 23 51</a></p>
 							<p><span class="icon-email"></span><a href="email:info@pet-plastik.com">info@pet-plastik.com</a></p>
-							<a href="##" class="footer__link"><span class="icon-phone-circle"></span></a>
+							<a href="#popup" class="footer__link popup-link"><span class="icon-phone-circle"></span></a>
 						</div>
 					</div>
 				</div>
@@ -110,6 +133,40 @@
 	</div>
 	<!-- WRAPPER end -->
 	<!-- POPUP  -->
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close close-popup"><span class="icon-close"></span></a>
+				<div class="title">ЗАМОВИТИ ДЗВІНОК</div>
+				<form id="form-call-back">
+					<div class="data-fields">
+						<div class="data-user">
+							<input id="name" type="text" name="name" placeholder="Ім’я">
+						</div>
+						<div class="data-user">
+							<input id="tel" type="text" name="tel" placeholder="Телефон">
+						</div>
+					</div>
+					<div class="checkbox">
+						<input type="checkbox" name="checkbox-agree-popup" id="checkbox-agree-popup" class="custom-checkbox">
+						<label for="checkbox-agree-popup"></label>
+						<span class="checkbox__txt">Я погоджуюсь на обробку персональних даних</span>
+					</div>
+					<a href="#popup-thank" class="btn popup-link">Замовити дзвінок</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="popup-thank" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a class="popup__close close-popup"><span class="icon-close"></span></a>
+				<div class="title">Дякуємо!</div>
+				<p>Наш менеджер зв’яжеться з Вами!</p>
+				<a class="popup__close close-popup btn">Закрити</a>
+			</div>
+		</div>
+	</div>
 	<!-- POPUP END  -->
 	<!-- SCRIPTS start  -->
 	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
