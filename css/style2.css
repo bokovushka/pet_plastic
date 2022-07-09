@@ -1,0 +1,81 @@
+.section-top {
+  padding: 221px 0 224px 0;
+  background: url(../img/header-bg2.png) no-repeat center;
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.section-top__info {
+  max-width: 100%;
+  margin-left: 0;
+  text-align: center;
+}
+
+.section-top__info .title {
+  margin-bottom: 26px;
+}
+
+.nav-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-page li {
+  font-weight: 600;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-page li a {
+  color: #001945;
+}
+
+.nav-page li:last-child {
+  padding-top: 4px;
+}
+
+.nav-page li:not(:last-child) {
+  margin-right: 15px;
+}
+
+.nav-page li:not(:last-child) a {
+  padding: 7px 12px 3px 12px;
+  background: #009fff;
+  border-radius: 42px;
+  color: #ffffff;
+}
+
+.nav-page li:not(:last-child)::before {
+  content: "/";
+  position: absolute;
+  right: -10px;
+  color: #001945;
+}
+
+.product__info {
+  padding-bottom: 39px;
+}
+
+@media only screen and (max-width: 767px) {
+  .section-top {
+    padding: 124px 0 91px 0;
+    background-size: cover;
+    background-position: 40%;
+  }
+}
