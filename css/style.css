@@ -970,16 +970,6 @@ header {
   gap: 40px;
 }
 
-.contacts img {
-  -webkit-box-shadow: 0px 0px 15px 7px rgba(20, 137, 207, 0.15);
-          box-shadow: 0px 0px 15px 7px rgba(20, 137, 207, 0.15);
-  border-radius: 20px;
-  max-width: 764px;
-  height: 513px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .contacts__info {
   padding: 40px 52px;
   width: 420px;
@@ -1579,6 +1569,28 @@ input {
   text-align: center;
 }
 
+#map {
+  -webkit-box-shadow: 0px 0px 15px 7px rgba(20, 137, 207, 0.15);
+          box-shadow: 0px 0px 15px 7px rgba(20, 137, 207, 0.15);
+  border-radius: 20px;
+  max-width: 764px;
+  height: 513px;
+  pointer-events: none;
+}
+
+.gm-style-mtc,
+.gmnoprint,
+.gm-svpc,
+.gm-style button,
+.gm-style > div > a > div > img {
+  display: none;
+}
+
+.map {
+  position: relative;
+  width: 100%;
+}
+
 @media only screen and (max-width: 1279px) {
   .header-menu .btn {
     display: none;
@@ -1794,6 +1806,9 @@ input {
     font-size: 29px;
     margin-right: 34px;
   }
+  #map {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2005,6 +2020,9 @@ input {
   .tab-view {
     margin-bottom: 51px;
   }
+  #map {
+    height: 319px;
+  }
 }
 
 @media only screen and (max-width: 639px) {
@@ -2072,9 +2090,6 @@ input {
   .contacts img {
     height: 320px;
   }
-  .foоter {
-    background-position: 51%;
-  }
   .footer-nav li,
   .footer__description p,
   .footer-contacts p {
@@ -2091,5 +2106,6 @@ input {
   }
   .footer__info {
     padding: 38px 0 96px 0;
+    margin-top: 68px;
   }
 }
