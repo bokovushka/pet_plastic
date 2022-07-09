@@ -389,9 +389,10 @@ header {
 	display: flex;
 }
 .footer-nav {
-	li {
+	li a {
 		font-size: 16px;
 		line-height: 230%;
+		color: $color__white;
 		&:hover {
 			color: $color__blue;
 		}
@@ -858,7 +859,6 @@ input {
 		height: 28px;
 		position: absolute;
 		right: 25px;
-		z-index: 3;
 		overflow: hidden;
 		span {
 			width: 100%;
@@ -880,6 +880,7 @@ input {
 		//hamburger icon open
 	}
 	.menu-btn-m {
+		z-index: 3;
 		span {
 			transition: all 0.5s;
 		}
@@ -961,10 +962,20 @@ input {
 		align-items: center;
 		text-align: center;
 		font-weight: 600;
-		font-size: 16px;
-		line-height: 430%;
 		gap: 0;
 		padding: 48px 0;
+		width: 100%;
+		margin: 0;
+		li {
+			width: 100%;
+			a {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				font-size: 16px;
+				line-height: 430%;
+			}
+		}
 	}
 	.header-m {
 		display: flex;

@@ -1078,12 +1078,13 @@ header {
   display: flex;
 }
 
-.footer-nav li {
+.footer-nav li a {
   font-size: 16px;
   line-height: 230%;
+  color: #ffffff;
 }
 
-.footer-nav li:hover {
+.footer-nav li a:hover {
   color: #009fff;
 }
 
@@ -1633,7 +1634,6 @@ input {
     height: 28px;
     position: absolute;
     right: 25px;
-    z-index: 3;
     overflow: hidden;
   }
   .menu-btn span,
@@ -1655,6 +1655,9 @@ input {
   .menu-btn span:nth-of-type(3),
   .menu-btn-m span:nth-of-type(3) {
     top: calc(50% + 11px);
+  }
+  .menu-btn-m {
+    z-index: 3;
   }
   .menu-btn-m span {
     -webkit-transition: all 0.5s;
@@ -1753,10 +1756,24 @@ input {
             align-items: center;
     text-align: center;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 430%;
     gap: 0;
     padding: 48px 0;
+    width: 100%;
+    margin: 0;
+  }
+  .nav-menu li {
+    width: 100%;
+  }
+  .nav-menu li a {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+    line-height: 430%;
   }
   .header-m {
     display: -webkit-box;
